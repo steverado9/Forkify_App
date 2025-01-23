@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-color: rgb(196, 124, 41);
+}
+
+header {
+    background-color: #F2EFE7;
+}
+
+header .logo {
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2rem;
+    color: rgb(196, 124, 41);
+}
+
+.input-button {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.input-button .input {
+    border: none;
+    background: none;
+
+}
+
+.input-button .input:focus {
+    outline: none;
+}
+
+.input-button .btn,
+.input-button .btn:hover {
+    background-color: rgb(196, 124, 41);
+    color: white;
+    border-radius: 20px;
+}
+
+.wrapper {
+    background-color: white;
+    display: flex;
+}
+
+.wrapper .recipe_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TO TRANSFORM TEXT (MAKE IT BEND) */
+.recepie_figure {
+    height: 30rem;
+    position: relative;
+    transform: scale(1.04) translateY(-1px);
+    transform-origin: top;
+}
+
+.recipe-title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 20%) skewY(-6deg);
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    width: 70%;
+    line-height: 1.2;
+
+}
+
+.recipe-title span {
+    background-color: rgb(196, 124, 41);
+}
+
+.recepie_details{
+    margin: 0;
+    background-color: #F2EFE7;
+}
+
+.recipe_info_icon,
+.recipe_item_icon{
+    color: rgb(196, 124, 41);
+}
+
+.recipe_info_love{
+    font-size: 1.5rem;
+}
+
+.recipe_ingredients{
+    background-color: #E1EACD;
+}
+
+.recipe_item{
+    list-style-type: none;
+}
+
+.recipe_ingredients_button {
+    background-color: rgb(196, 124, 41);
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    width: 240px;
+}
+
+.recipe_direction{
+    background-color: #FBFBFB;
+}
+
+.recipe_direction_header,
+.shopping_header{
+    color: rgb(196, 124, 41);
+}
+
+.recipe_direction_text{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.recipe_direction_text_bold{
+    font-weight: bold;
+}
+
+.recipe_direction_button{
+    background-color: rgb(196, 124, 41);
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    width: 160px;
+    font-size: 1.2rem;
+}
+
+
