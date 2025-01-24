@@ -16,101 +16,17 @@
         <header class="header p-3">
             <div class="w-75 d-flex justify-content-between">
                 <span class="logo">Forkify</span>
-                <div class="input-button d-flex justify-content-between w-75 text-center">
-                    <input type="text" class="input w-75 m-2">
-                    <button class="btn w-25"><i class="bi bi-search"></i> SEARCH</button>
-                </div>
+                <form class="input-button d-flex justify-content-between text-center" id="input-button">
+                    <input type="text" class="input w-75 m-2 p-2" placeholder="Search over 1,000,000 recipes...">
+                    <button type="submit" class="btn w-25"><i class="bi bi-search"></i> SEARCH</button>
+                </form>
             </div>
         </header>
         <div class="wrapper">
-            <div class="result text-center w-25">bb</div>
-            <div class="recipe w-50">
-                <figure class="recepie_figure text-center">
-                    <img src="./images/beef-burger.jpg" alt="hamburger" class="recipe_image">
-                    <h1 class="recipe-title">
-                        <span>Pepperoni Pizza Burger</span>
-                    </h1>
-                </figure>
-                <div class="recepie_details p-5 d-flex justify-content-between">
-                    <div class="recipe_info">
-                        <i class="bi bi-stopwatch recipe_info_icon"></i>
-                        <span>30</span>
-                        <span>MINUTES</span>
-                    </div>
-                    <div class="recipe_info">
-                        <i class="bi bi-person-standing recipe_info_icon"></i>
-                        <span>4</span>
-                        <span>SERVINGS</span>
-                    </div>
-                    <div class="recipe_info recipe_info_love">
-                        <i class="bi bi-heart recipe_info_icon"></i>
-                    </div>
-                </div>
-                <div class="recipe_ingredients p-3">
-                    <div class="d-flex">
-                        <ul class="recipe_ingredients_list1">
-                            <li class="recipe_item p-3">
-                                <i class="bi bi-check-circle-fill recipe_item_icon"></i>
-                                <span>1 1/2</span>
-                                <span class="">pound ground beef</span>
-                            </li>
-                            <li class="recipe_item p-3">
-                                <i class="bi bi-check-circle-fill recipe_item_icon"></i>
-                                <span>1/2</span>
-                                <span>tsp italian seasoning</span>
-                            </li>
-                            <li class="recipe_item p-3">
-                                <i class="bi bi-check-circle-fill recipe_item_icon"></i>
-                                <span>pepperoni slices</span>
-                            </li>
-                            <li class="recipe_item p-3">
-                                <i class="bi bi-check-circle-fill recipe_item_icon"></i>
-                                <span>grated parmesan cheese</span>
-                            </li>
-                        </ul>
-                        <ul class="recipe_ingredients_list2">
-                            <li class="recipe_item p-3">
-                                <i class="bi bi-check-circle-fill recipe_item_icon"></i>
-                                <span>1/2</span>
-                                <span>pound italian sausage</span>
-                            </li>
-                            <li class="recipe_item p-3">
-                                <i class="bi bi-check-circle-fill recipe_item_icon"></i>
-                                <span>8</span>
-                                <span>slices mozarella or provolene cheese</span>
-                            </li>
-                            <li class="recipe_item p-3">
-                                <i class="bi bi-check-circle-fill recipe_item_icon"></i>
-                                <span>8</span>
-                                <span>tbsp jarred marinara sauce</span>
-                            </li>
-                            <li class="recipe_item p-3">
-                                <i class="bi bi-check-circle-fill recipe_item_icon"></i>
-                                <span>4</span>
-                                <span>whole kaiser rolls or good hamburger buns</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="text-center">
-                        <button class="recipe_ingredients_button p-1">
-                            <i class="bi bi-cart-check"></i>
-                            ADD TO SHOPPING LIST
-                        </button>
-                    </div>
-                </div>
-                <div class="recipe_direction p-5 text-center">
-                    <h4 class="recipe_direction_header">HOW TO COOK IT<h4>
-                    <span class="recipe_direction_text">This recipe was carefully designed and tested by 
-                        <span class="recipe_direction_text_bold">
-                            The Pioneer Woman.
-                        </span>
-                        Please check out directions at the website
-                    </span>
-                    <button class="recipe_direction_button mt-4 p-2">
-                        DIRECTIONS<i class="bi bi-caret-right recipe_direction_button_icon"></i>
-                    </button>
-                </div>
+            <div class="result text-center w-25">
+                <ul class="result_list"></ul>
             </div>
+            <div class="recipe w-50"></div>
             <div class="shopping w-25 text-center">
                 <h5 class="shopping_header mt-4">MY SHOPPING LIST</h5>
             </div>
