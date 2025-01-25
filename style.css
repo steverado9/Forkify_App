@@ -5,7 +5,11 @@
 
 .body {
     background-color: rgb(196, 124, 41);
-    height: 120vh;
+    height: 180vh;
+}
+
+.container{
+    overflow: hidden;
 }
 
 /* css for the header */
@@ -49,7 +53,7 @@ header .logo {
     background-color: white;
     display: flex;
     justify-content: space-between;
-    height: 100vh;
+    height: 156vh;
 }
 
 /* css for the result side */
@@ -57,25 +61,23 @@ header .logo {
     list-style-type: none;
 }
 
-.results_link:link,
+.results_link,
 .results_link:visited{
     display: flex;
     align-items: center;
-    padding: 1.5rem, 3rem;
     transition: all .3s;
     text-decoration: none;
 }
 
-.results_link--active{
+/* .results_link--active{
     background-color: #F2EFE7;
-}
+} */
 
 .results_fig{
     flex: 0 0 5.5rem;
     border-radius: 50%;   
     overflow: hidden;
     height: 5.5rem;
-    margin-right: 2rem;
     position: relative;
     backface-visibility: hidden;
 }
@@ -99,19 +101,19 @@ header .logo {
 }
 
 .results_name{
-    font-size: 1.3rem;
+    font-size: 14px;
     color: rgb(196, 124, 41);
     text-transform: uppercase;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-bottom: .3rem;
 }
 
 .result_author{
-    font-size: 1.1rem;
+    font-size: 14px;
     color: #968B87;
     opacity: 0.8;
     text-transform: uppercase;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 /* css for recipe side */
