@@ -11,7 +11,7 @@ let searchUrl = "https://forkify-api.herokuapp.com/api/search?q="; //The url use
 const recipeUrl = "https://forkify-api.herokuapp.com/api/get?rId=46956"; //The url for recipe
 const documentationUrl = "https://forkify-api.herokuapp.com/"; //The url for documentation
 
-let links;
+
 
 //A submit event, that calls the api function
 form.addEventListener('submit', async (e) => {
@@ -55,14 +55,10 @@ form.addEventListener('submit', async (e) => {
         
         console.log(result); 
 
-
-       links = a;
-    //    console.log(links);
        
     }
 })
 
-console.log(links); //i was trying to link the atag, so i can add a click event to it but i cant seem to select it
 
 
 
