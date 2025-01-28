@@ -53,7 +53,7 @@ header .logo {
     background-color: white;
     display: flex;
     justify-content: space-between;
-    height: 156vh;
+    height: 153vh;
 }
 
 /* css for the result side */
@@ -119,6 +119,91 @@ header .logo {
 /* css for recipe side */
 .recipe{
     background-color: #F2EFE7;
+}
+
+.recipe_fig {
+    height: 30rem;
+    position: relative;
+    transform: scaleY(1.04) translateY(-1px);
+    transform-origin: top;
+}
+
+.recipe_fig::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.recipe_img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipe_title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 20%) skewY(-6deg);
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    width: 80%;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.recipe_title span {
+    background-color: rgb(196, 124, 41);
+    padding: 1.3rem 2rem;
+}
+
+/* recipe details */
+.recipe_details{
+    display: flex;
+    align-items: center;
+    padding: 8rem 3rem 3rem 3rem;
+}
+
+.recipe_info:not(:last-child){
+    margin-right: 4rem;
+}
+
+.recipe_info{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.recipe_info-icon{
+    height: 2rem;
+    width: 2rem;
+    color: rgb(196, 124, 41);
+    margin-right: 1rem;
+}
+
+.recipe_info_data{
+    font-weight: 600;
+}
+
+.recipe_love{
+    background-color: rgb(196, 124, 41);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    height: 4.5rem;
+    margin-left: auto;
+    transition: all .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* css for shopping side */
